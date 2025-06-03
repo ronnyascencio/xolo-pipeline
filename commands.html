@@ -428,36 +428,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#config-commands" class="md-nav__link">
     <span class="md-ellipsis">
-      Models
+      Config Commands
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xolo.core.models" class="md-nav__link">
+  <a href="#xolo.core.config" class="md-nav__link">
     <span class="md-ellipsis">
-      models
+      config
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xolo.core.models.FolderStructure" class="md-nav__link">
+  <a href="#xolo.core.config.set_roots" class="md-nav__link">
     <span class="md-ellipsis">
-      FolderStructure
+      set_roots
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xolo.core.models.ProjectData" class="md-nav__link">
+  <a href="#xolo.core.config.update_roots" class="md-nav__link">
     <span class="md-ellipsis">
-      ProjectData
+      update_roots
     </span>
   </a>
   
@@ -503,6 +503,42 @@
   <a href="#xolo.core.project.import_media" class="md-nav__link">
     <span class="md-ellipsis">
       import_media
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xolo.core.models" class="md-nav__link">
+    <span class="md-ellipsis">
+      models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xolo.core.models.FolderStructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      FolderStructure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xolo.core.models.ProjectData" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProjectData
     </span>
   </a>
   
@@ -543,36 +579,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#models" class="md-nav__link">
+  <a href="#config-commands" class="md-nav__link">
     <span class="md-ellipsis">
-      Models
+      Config Commands
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xolo.core.models" class="md-nav__link">
+  <a href="#xolo.core.config" class="md-nav__link">
     <span class="md-ellipsis">
-      models
+      config
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xolo.core.models.FolderStructure" class="md-nav__link">
+  <a href="#xolo.core.config.set_roots" class="md-nav__link">
     <span class="md-ellipsis">
-      FolderStructure
+      set_roots
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#xolo.core.models.ProjectData" class="md-nav__link">
+  <a href="#xolo.core.config.update_roots" class="md-nav__link">
     <span class="md-ellipsis">
-      ProjectData
+      update_roots
     </span>
   </a>
   
@@ -623,6 +659,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xolo.core.models" class="md-nav__link">
+    <span class="md-ellipsis">
+      models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xolo.core.models.FolderStructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      FolderStructure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xolo.core.models.ProjectData" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProjectData
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -643,14 +715,14 @@
 
 
 <h1 id="core-module">Core Module</h1>
-<h2 id="models">Models</h2>
+<h2 id="config-commands">Config Commands</h2>
 
 
 <div class="doc doc-object doc-module">
 
 
 
-<a id="xolo.core.models"></a>
+<a id="xolo.core.config"></a>
     <div class="doc doc-contents first">
 
 
@@ -670,33 +742,24 @@
 
 
 
-<div class="doc doc-object doc-class">
+
+<div class="doc doc-object doc-function">
 
 
-
-<h2 id="xolo.core.models.FolderStructure" class="doc doc-heading">
-            <code>FolderStructure</code>
-
+<h2 id="xolo.core.config.set_roots" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">set_roots</span><span class="p">(</span><span class="n">projects</span><span class="p">,</span> <span class="n">assets</span><span class="p">)</span></code>
 
 </h2>
 
 
     <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="pydantic.BaseModel">BaseModel</span></code></p>
+
+        <p>Set roots path for projects and  global assets folders create environment variable PROJECTS and GLOBAL_ASSETS</p>
 
 
-        <p>folder structure that will be created in the base path of the PROJECTS_ROOT</p>
-
-
-
-
-
-
-
-              <details class="quote">
-                <summary>Source code in <code>xolo/core/models.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">13</span>
+            <details class="quote">
+              <summary>Source code in <code>xolo/core/config.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">13</span>
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
@@ -706,102 +769,79 @@
 <span class="normal">20</span>
 <span class="normal">21</span>
 <span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">FolderStructure</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">set_roots</span><span class="p">(</span><span class="n">projects</span><span class="p">:</span> <span class="n">Path</span><span class="p">,</span> <span class="n">assets</span><span class="p">:</span> <span class="n">Path</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    folder structure that will be created in the base path of the PROJECTS_ROOT</span>
+<span class="sd">    Set roots path for projects and  global assets folders create environment variable PROJECTS and GLOBAL_ASSETS</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">assets</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/assets&quot;</span>
-    <span class="n">shots</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/shots&quot;</span>
-    <span class="n">renders</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/renders&quot;</span>
-    <span class="n">editorial</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/editorial&quot;</span>
-    <span class="n">reviews</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/reviews&quot;</span>
-    <span class="n">delivery</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/delivery&quot;</span>
-    <span class="n">published</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/published&quot;</span>
+    <span class="n">project_root</span> <span class="o">=</span> <span class="n">projects</span>
+    <span class="n">assets_root</span> <span class="o">=</span> <span class="n">assets</span>
+    <span class="n">config_data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;PROJECTS&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">project_root</span><span class="p">),</span> <span class="s2">&quot;GLOBAL_ASSETS&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">assets_root</span><span class="p">)}</span>
+    <span class="n">config_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="s2">&quot;config.yaml&quot;</span>
+    <span class="k">with</span> <span class="n">config_path</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">yaml</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">config_data</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">default_flow_style</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">typer</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Path saved to config.yaml: </span><span class="si">{</span><span class="n">project_root</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">config_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="k">with</span> <span class="n">config_path</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="n">projects_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;PROJECTS&quot;</span><span class="p">])</span>
+        <span class="n">assets_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;GLOBAL_ASSETS&quot;</span><span class="p">])</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PROJECTS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">projects_path</span><span class="p">)</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;GLOBAL_ASSETS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">assets_path</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">typer</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="s2">&quot;Environment variable PROJECTS and GLOBAL_ASSETS not set&quot;</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="n">typer</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">RED</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
+            </details>
     </div>
 
 </div>
 
-<div class="doc doc-object doc-class">
+<div class="doc doc-object doc-function">
 
 
-
-<h2 id="xolo.core.models.ProjectData" class="doc doc-heading">
-            <code>ProjectData</code>
-
+<h2 id="xolo.core.config.update_roots" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">update_roots</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></code>
 
 </h2>
 
 
     <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="pydantic.BaseModel">BaseModel</span></code></p>
+
+        <p>update root path for projects and global assets  and create environment variable PROJECTS</p>
 
 
-        <p>Metadata for the project config file</p>
-
-
-
-
-
-
-
-              <details class="quote">
-                <summary>Source code in <code>xolo/core/models.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ProjectData</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+            <details class="quote">
+              <summary>Source code in <code>xolo/core/config.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update_roots</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="n">Path</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Metadata for the project config file</span>
+<span class="sd">    update root path for projects and global assets  and create environment variable PROJECTS</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">resolution</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">fps</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="k">pass</span>
 </code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
+            </details>
     </div>
 
 </div>
-
 
 
 
@@ -1014,6 +1054,172 @@ plates, assets, resources</p>
     </div>
 
 </div>
+
+
+
+  </div>
+
+    </div>
+
+</div><h2 id="models">Models</h2>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="xolo.core.models"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="xolo.core.models.FolderStructure" class="doc doc-heading">
+            <code>FolderStructure</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pydantic.BaseModel">BaseModel</span></code></p>
+
+
+        <p>folder structure that will be created in the base path of the PROJECTS_ROOT</p>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>xolo/core/models.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">FolderStructure</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    folder structure that will be created in the base path of the PROJECTS_ROOT</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">assets</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/assets&quot;</span>
+    <span class="n">shots</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/shots&quot;</span>
+    <span class="n">renders</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/renders&quot;</span>
+    <span class="n">editorial</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/editorial&quot;</span>
+    <span class="n">reviews</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/reviews&quot;</span>
+    <span class="n">delivery</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/delivery&quot;</span>
+    <span class="n">published</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;/published&quot;</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="xolo.core.models.ProjectData" class="doc doc-heading">
+            <code>ProjectData</code>
+
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="pydantic.BaseModel">BaseModel</span></code></p>
+
+
+        <p>Metadata for the project config file</p>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>xolo/core/models.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ProjectData</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Metadata for the project config file</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">resolution</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">fps</span><span class="p">:</span> <span class="nb">str</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
 
 
 
