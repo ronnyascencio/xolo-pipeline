@@ -2,18 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://xolo.ronnyascencio.com/index.html</loc>
-         <lastmod>2025-06-03</lastmod>
-    </url>
-    <url>
-         <loc>https://xolo.ronnyascencio.com/commands.html</loc>
-         <lastmod>2025-06-03</lastmod>
+         <lastmod>2025-06-04</lastmod>
     </url>
     <url>
          <loc>https://xolo.ronnyascencio.com/getting-started.html</loc>
-         <lastmod>2025-06-03</lastmod>
+         <lastmod>2025-06-04</lastmod>
     </url>
     <url>
          <loc>https://xolo.ronnyascencio.com/usage.html</loc>
-         <lastmod>2025-06-03</lastmod>
+         <lastmod>2025-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://xolo.ronnyascencio.com/tutorial/commands.html</loc>
+         <lastmod>2025-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://xolo.ronnyascencio.com/tutorial/installation.html</loc>
+         <lastmod>2025-06-04</lastmod>
+    </url>
+    <url>
+         <loc>https://xolo.ronnyascencio.com/utils/load_config.html</loc>
+         <lastmod>2025-06-04</lastmod>
     </url>
 </urlset>
